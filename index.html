@@ -11,29 +11,28 @@
 <style>
   body {
     font-family: 'Roboto', sans-serif;
-    /* Degradado Rustic Warm (#8B5E3C) a Butter Cream (#F3E2B8) */
     background-image: linear-gradient(to bottom right, #8B5E3C, #F3E2B8);
     color: #B69F66; /* Ink Gild */
   }
   h1, h2, h3, h4, p, address, div {
-    color: #B69F66 !important; /* Forzar Ink Gild */
+    color: #B69F66 !important;
   }
   .icon {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-right: 0.75rem;
-    color: #B69F66; /* Ink Gild */
+    color: #B69F66;
   }
   .card {
-    background-color: #4A4A4A; /* Fleet Gray */
-    border: 2px solid #CBA135; /* Dorado */
+    background-color: #4A4A4A;
+    border: 2px solid #CBA135;
     box-shadow: 0 4px 12px rgba(182, 159, 102, 0.3);
     color: #B69F66;
     position: relative;
     z-index: 10;
   }
   .btn-primary {
-    background-color: #CBA135; /* Dorado */
+    background-color: #CBA135;
     color: black;
     transition: background-color 0.3s;
   }
@@ -41,8 +40,8 @@
     background-color: #a7842b;
   }
   header {
-    background-color: #4A4A4A; /* Fleet Gray */
-    border-bottom: 2px solid #CBA135; /* Dorado */
+    background-color: #4A4A4A;
+    border-bottom: 2px solid #CBA135;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,8 +51,8 @@
     z-index: 11;
   }
   footer {
-    background-color: #4A4A4A; /* Fleet Gray */
-    border-top: 2px solid #CBA135; /* Dorado */
+    background-color: #4A4A4A;
+    border-top: 2px solid #CBA135;
     padding: 2rem;
     text-align: center;
     color: #B69F66;
@@ -62,17 +61,17 @@
   }
   .decoracion {
     position: fixed;
-    top: 20%;
+    top: 25%;
     width: 120px;
-    opacity: 0.07;
-    z-index: 1;
+    opacity: 1;
+    z-index: 9;
     pointer-events: none;
   }
   #otoscopio {
-    left: 0;
+    left: 10%;
   }
   #estetoscopio {
-    right: 0;
+    right: 10%;
   }
 </style>
 </head>
@@ -98,48 +97,3 @@
         <div id="details" class="text-left max-w-md mx-auto">
           <p class="text-center mb-8" style="color:#FFFFFF;">Acompáñanos a brindar por este gran logro en una noche que promete ser inolvidable.</p>
           <div class="flex items-start mb-4">
-            <span class="icon">📅</span>
-            <div>
-              <h4 class="font-bold">Fecha y Hora</h4>
-              <p>Viernes, 21 de junio de 2025</p>
-              <p class="text-sm" style="color:#D7C491;">6:00 PM</p>
-            </div>
-          </div>
-          <div class="flex items-start mb-4">
-            <span class="icon">📍</span>
-            <div>
-              <h4 class="font-bold">Lugar</h4>
-              <p>Hotel Dann Carlton</p>
-              <address class="not-italic text-sm" style="color:#D7C491;">Cra. 15 #103-60, Bogotá</address>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <span class="icon">👔</span>
-            <div>
-              <h4 class="font-bold">Código de Vestimenta</h4>
-              <p>Smart Casual</p>
-            </div>
-          </div>
-        </div>
-        <div class="mt-10 text-center">
-          <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Dann+Carlton+Cra.+15+%23103-60+Bogota" target="_blank" class="inline-block btn-primary rounded-md px-8 py-3 font-semibold tracking-wide text-sm">
-            VER EN GOOGLE MAPS
-          </a>
-        </div>
-      </section>
-      <footer>
-        <h4 class="text-lg font-bold">¡Contamos con tu presencia!</h4>
-        <p class="mt-2 text-sm">Por favor, confirma tu asistencia antes del viernes 6 de junio del 2025 a las 4:00 PM.</p>
-        <button id="rsvpButton" class="mt-4 btn-primary rounded-md px-10 py-3 font-semibold tracking-wide">
-          CONFIRMAR ASISTENCIA
-        </button>
-      </footer>
-    </div>
-  </main>
-  <script>
-    document.getElementById('rsvpButton').addEventListener('click', function () {
-      window.open('https://wa.me/573215447455', '_blank');
-    });
-  </script>
-</body>
-</html>
