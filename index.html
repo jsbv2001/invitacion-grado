@@ -11,20 +11,21 @@
 <style>
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #000000; /* Fondo negro */
-    color: #B69F66; /* Texto Ink Gild */
+    /* Degradado Rustic Warm (#8B5E3C) a Butter Cream (#F3E2B8) */
+    background-image: linear-gradient(to bottom right, #8B5E3C, #F3E2B8);
+    color: #B69F66; /* Ink Gild */
   }
   h1, h2, h3, h4, p, address, div {
-    color: #B69F66 !important; /* Forzar Ink Gild en todos los textos */
+    color: #B69F66 !important; /* Forzar Ink Gild */
   }
   .icon {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-right: 0.75rem;
-    color: #B69F66; /* Dorado Ink Gild */
+    color: #B69F66; /* Ink Gild */
   }
   .card {
-    background-color: #6A9FB5; /* Azul suave */
+    background-color: #4A4A4A; /* Fleet Gray */
     border: 2px solid #CBA135; /* Dorado */
     box-shadow: 0 4px 12px rgba(182, 159, 102, 0.3);
     color: #B69F66;
@@ -40,7 +41,7 @@
     background-color: #a7842b;
   }
   header {
-    background-color: #6A9FB5; /* Azul suave */
+    background-color: #4A4A4A; /* Fleet Gray */
     border-bottom: 2px solid #CBA135; /* Dorado */
     display: flex;
     justify-content: space-between;
@@ -51,7 +52,7 @@
     z-index: 11;
   }
   footer {
-    background-color: #6A9FB5; /* Azul suave */
+    background-color: #4A4A4A; /* Fleet Gray */
     border-top: 2px solid #CBA135; /* Dorado */
     padding: 2rem;
     text-align: center;
@@ -59,7 +60,6 @@
     position: relative;
     z-index: 11;
   }
-  /* Decoracion (otoscopio y estetoscopio) */
   .decoracion {
     position: fixed;
     top: 20%;
@@ -77,9 +77,8 @@
 </style>
 </head>
 <body>
-  <!-- Imágenes decorativas, visibles solo en pantallas grandes -->
-  <img id="otoscopio" class="decoracion hidden lg:block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Otoscope_icon.svg/512px-Otoscope_icon.svg.png" alt="Otoscopio" />
-  <img id="estetoscopio" class="decoracion hidden lg:block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Modern_stethoscope.svg/512px-Modern_stethoscope.svg.png" alt="Estetoscopio" />
+  <img id="otoscopio" class="decoracion hidden lg:block" src="https://cdn-icons-png.flaticon.com/512/822/822185.png" alt="Otoscopio" />
+  <img id="estetoscopio" class="decoracion hidden lg:block" src="https://cdn-icons-png.flaticon.com/512/117/117796.png" alt="Estetoscopio" />
 
   <main class="container mx-auto max-w-2xl p-4 sm:p-8">
     <div class="card rounded-lg overflow-hidden">
